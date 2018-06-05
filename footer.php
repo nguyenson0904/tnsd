@@ -2,11 +2,11 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-		<div id="goTop">
+		<div id="goTop" class="goTop">
 <img src="/wp-content/uploads/2018/04/gotoTop.png" alt="">
 		</div>
 <a href="tel:19002625" class="fancybox">
-    <div class="vf-alo-phone vf-alo-green vf-alo-show" id="vf-alo-phoneIcon" style="right:-40px; top: 20px;">
+    <div class="vf-alo-phone vf-alo-green vf-alo-show" id="vf-alo-phoneIcon">
         <div class="vf-alo-ph-circle"></div>
         <div class="vf-alo-ph-circle-fill"></div>
         <div class="vf-alo-ph-img-circle"></div>
@@ -17,6 +17,7 @@
 				<li class="ms"><a href="https://m.me/thieuniensieudang" target="_blank" data-balloon="Chat Facebook" data-balloon-pos="left"><i class="fab fa-facebook-messenger"></i></a></li>
 				<li class="fb"><a href="https://www.facebook.com/thieuniensieudang/" target="_blank" data-balloon="Fanpage" data-balloon-pos="left"><i class="fab fa-facebook"></i></a></li>
 				<li class="gift"><a href="#" data-balloon="Quà tặng" data-balloon-pos="left"><i class="fas fa-gift"></i></a></li>
+				<li class="gtop"><a href="#"><i class="fas fa-chevron-up"></i></a></li>
 		</ul>
 		
 <!--
@@ -88,7 +89,7 @@
 
 			// scrollTop
 			//////////////////////////////////////////////////////////
-			$("#goTop").click(function() {
+			$(".goTop").click(function() {
 			$('html, body').animate({
 			    scrollTop: $("#topBanner").offset().top
 			}, 1000);
@@ -153,9 +154,9 @@
 							// 	  PUM.open(95);
 						 //
 						 // }
-						 $('#floatsocial').addClass("hide");
+//						 $('#floatsocial').addClass("hide");
 				   } else {
-				   	$('#floatsocial').removeClass("hide")
+//				   	$('#floatsocial').removeClass("hide")
 				   }
 		});
 

@@ -601,6 +601,7 @@ ul#floatsocial {
         position: relative;
         left: 0;
         transition: linear 100ms;
+        
         a {
             background: #3c3c3c;
             color: #fff;
@@ -614,6 +615,9 @@ ul#floatsocial {
 
         }
     }
+.gtop {
+    display: none;
+}
     li:hover {
         //padding-left: 15px;
     }
@@ -771,8 +775,8 @@ margin: 0!important;
         -moz-transition: visibility .5s;
         -o-transition: visibility .5s;
         transition: visibility .5s;
-        right: 150px;
-        top: 30px
+            right: -40px;
+    top: 20px;
     }
 
     .vf-alo-phone.vf-alo-show {
@@ -2003,6 +2007,38 @@ margin: 0 auto;
     grid-row-gap: 20px;
 }    
 
+    .vf-alo-phone {
+        left: -37px;
+    bottom: -8px;
+            top: inherit;
+    }
+    ul#floatsocial {
+    display: grid;
+    grid-template-columns: 0 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    top: inherit;
+    bottom: 2px;
+    right: 2px;
+    width: calc(100% - 115px);
+}
+    ul#floatsocial li a {
+    padding: 4px;
+        text-align: center;
+    }
+    ul#floatsocial i {
+    padding: 0;
+    font-size: 19px;
+}
+    #floatmessenger {
+    bottom: 44px;
+    right: 21px;
+    }
+    .gtop {
+    display: block!important;
+}
+    #goTop{
+        display: none!important;
+    }
 }
 
 
