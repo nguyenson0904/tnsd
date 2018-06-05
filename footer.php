@@ -19,15 +19,7 @@
 				<li class="gift"><a href="#" data-balloon="Quà tặng" data-balloon-pos="left"><i class="fas fa-gift"></i></a></li>
 				<li class="gtop"><a href="#"><i class="fas fa-chevron-up"></i></a></li>
 		</ul>
-		
-<!--
-		<ul id="floatsocial">
-				<li class="call"><a href="tel:0969002010 "><i class="fas fa-phone-square"></i>  0969.00.20.10 </a></li>
-				<li class="ms"><a href="https://m.me/thieuniensieudang" target="_blank"><i class="fab fa-facebook-messenger"></i> Gửi tin nhắn</a></li>
-				<li class="fb"><a href="https://www.facebook.com/thieuniensieudang/" target="_blank"><i class="fab fa-facebook"></i> Fanpage</a></li>
-				<li class="gift"><a href="#"><i class="fas fa-gift"></i> Quà tặng</a></li>
-		</ul>
--->
+
 		<div id="floatmessenger">
 			<a href="https://m.me/thieuniensieudang" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/messenger-icon.png';?>" alt=""></a>
 		</div>
