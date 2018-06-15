@@ -366,17 +366,18 @@ p {
     font-size: 22px;
     margin-top: 8px !important; }
 
-#formdangky {
+#formfree, #formdangky {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 14px; }
-  #formdangky input[type="text"],
+  #formfree input[type="text"],
+  #formfree select, #formdangky input[type="text"],
   #formdangky select {
     border: none;
     font-size: 25px;
     padding: 12px;
     border-radius: 10px; }
-  #formdangky #form-submit {
+  #formfree #form-submit, #formdangky #form-submit {
     color: #fff;
     background: red;
     border: none;
@@ -384,7 +385,7 @@ p {
     font-size: 32px;
     font-weight: bold;
     border-radius: 10px; }
-  #formdangky .form-success {
+  #formfree .form-success, #formdangky .form-success {
     text-align: center;
     color: #fff;
     font-size: 23px;
