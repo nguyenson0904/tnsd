@@ -28,12 +28,12 @@
 
 			// Code Countdown
 			//////////////////////////////////////////////////////////
-			$('#countdown').downCount({
-					date: '06/25/2018 23:00:59',
-					offset: +7
-			}, function () {
-					console.log('done');
-			});	
+//			$('#countdown').downCount({
+//					date: '06/25/2018 23:00:59',
+//					offset: +7
+//			}, function () {
+//					console.log('done');
+//			});	
             
             $('.countdown').downCount({
 					date: '06/25/2018 23:00:59',
@@ -43,7 +43,7 @@
 			});
 
 
-			// Code submit form
+			// Code submit form499
 			//////////////////////////////////////////////////////////
 			$('#formdangky').one('submit',function(){
 		var inputq1 = encodeURIComponent($('#ften').val());
@@ -65,6 +65,29 @@
 		setTimeout(function(){
 			// var url = "http://thieuniensieudang.com/thankyou";
 			$(location).attr('href',"http://thieuniensieudang.com/thankyou");
+		}, 500);
+});
+            
+			// Code submit formfree
+			//////////////////////////////////////////////////////////
+			$('.formfree').one('submit',function(){
+		var inputq1 = encodeURIComponent($('#freeten').val());
+		var inputq3 = encodeURIComponent($('#freedienthoai').val());
+		var inputq4 = encodeURIComponent($('#freekhuvuc').val());
+		var q1ID = "entry.750667992";
+		var q3ID = "entry.1573367888";
+		var q4ID = "entry.450826594";
+
+		var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfZjqNLLVKQsHcqzFh0EOg8iRNudWwbLBTHeapICPLzoCxnxQ/formResponse?';
+		var submitRef = '&submit=Submit';
+		var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q3ID + "=" + inputq3+ "&" + q4ID + "=" + inputq4 + submitRef);
+		console.log(submitURL);
+		$(this)[0].action=submitURL;
+		$('.formdangky').html('<div class="form-success">Gửi thông tin thành công !</div>');
+
+		setTimeout(function(){
+			// var url = "http://thieuniensieudang.com/thankyou";
+			$(location).attr('href',"http://thieuniensieudang.com/thankyoufree");
 		}, 500);
 });
 

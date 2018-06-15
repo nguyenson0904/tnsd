@@ -527,7 +527,7 @@ add_shortcode( 'formdangky', 'create_formdangky_shortcode' );
 
 
 
-// Create Shortcode formdangky
+// Create Shortcode formfree
 // Use the shortcode: [formfree]
 //https://docs.google.com/forms/d/e/1FAIpQLScR-7_R1Epqy9C9IAqCIQmNiPu8r1zh4ZLQWgk-tF7GeHhCAg/formResponse
 function create_formfree_shortcode($atts) {
@@ -540,11 +540,11 @@ function create_formfree_shortcode($atts) {
 	);
 	// Attributes in var
 ob_start();?>
-	<form id="formfree"  action="" method="POST" target="no-target">
-    <input type="text" id="ften" name="" value="" placeholder="Họ tên">
-    <input type="text" id="fdienthoai" name="" value="" placeholder="Số điện thoại">
+	<form id="formfree"  action="" method="POST" target="no-target" class="formfree">
+    <input type="text" id="freeten" name="" value="" placeholder="Họ tên">
+    <input type="text" id="freedienthoai" name="" value="" placeholder="Số điện thoại">
     <!-- <input type="text" id="fkhuvuc" name="" value="" placeholder="Khu vực"> -->
-    <select  id="fkhuvuc" name="" value="" placeholder="Khu vực">
+    <select  id="freekhuvuc" name="" value="" placeholder="Khu vực">
   <option value="" disabled selected>Lựa chọn khu vực</option>
   <option value="Hà Nội">Hà Nội</option>
   <option value="Hồ Chí Minh">TP. Hồ Chí Minh</option>
