@@ -530,7 +530,7 @@ add_shortcode( 'formdangky', 'create_formdangky_shortcode' );
 // Create Shortcode formdangky
 // Use the shortcode: [formfree]
 //https://docs.google.com/forms/d/e/1FAIpQLScR-7_R1Epqy9C9IAqCIQmNiPu8r1zh4ZLQWgk-tF7GeHhCAg/formResponse
-function create_formdangky_shortcode($atts) {
+function create_formfree_shortcode($atts) {
 	// Attributes
 	$atts = shortcode_atts(
 		array(
@@ -557,7 +557,7 @@ ob_start();?>
 
 	<?php    return ob_get_clean();
 }
-add_shortcode( 'formfree', 'create_formdangky_shortcode' );
+add_shortcode( 'formfree', 'create_formfree_shortcode' );
 
 
 
