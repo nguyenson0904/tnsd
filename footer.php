@@ -83,11 +83,11 @@
 		var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q3ID + "=" + inputq3+ "&" + q4ID + "=" + inputq4 + submitRef);
 		console.log(submitURL);
 		$(this)[0].action=submitURL;
-		$('.formdangky').html('<div class="form-success">Gửi thông tin thành công !</div>');
+		$('.formfree').html('<div class="form-success">Gửi thông tin thành công !</div>');
 
 		setTimeout(function(){
 			// var url = "http://thieuniensieudang.com/thankyou";
-			$(location).attr('href',"http://thieuniensieudang.com/thankyoufree");
+//			$(location).attr('href',"http://thieuniensieudang.com/thankyoufree");
 		}, 500);
 });
 
