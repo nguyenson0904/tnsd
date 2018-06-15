@@ -525,6 +525,43 @@ ob_start();?>
 }
 add_shortcode( 'formdangky', 'create_formdangky_shortcode' );
 
+
+
+// Create Shortcode formdangky
+// Use the shortcode: [formfree]
+//https://docs.google.com/forms/d/e/1FAIpQLScR-7_R1Epqy9C9IAqCIQmNiPu8r1zh4ZLQWgk-tF7GeHhCAg/formResponse
+function create_formdangky_shortcode($atts) {
+	// Attributes
+	$atts = shortcode_atts(
+		array(
+		),
+		$atts,
+		'formfree'
+	);
+	// Attributes in var
+ob_start();?>
+	<form id="formdangky"  action="" method="POST" target="no-target">
+    <input type="text" id="ften" name="" value="" placeholder="Họ tên">
+    <input type="text" id="femail" name="" value="" placeholder="Email">
+    <input type="text" id="fdienthoai" name="" value="" placeholder="Số điện thoại">
+    <!-- <input type="text" id="fkhuvuc" name="" value="" placeholder="Khu vực"> -->
+    <select  id="fkhuvuc" name="" value="" placeholder="Khu vực">
+  <option value="" disabled selected>Lựa chọn khu vực</option>
+  <option value="Hà Nội">Hà Nội</option>
+  <option value="Hồ Chí Minh">TP. Hồ Chí Minh</option>
+</select>
+    <button id="form-submit" class="" type="submit">ĐĂNG KÝ NGAY</button>
+  </form>
+  <p id="input-feedback"></p>
+  <!-- <iframe src="#" id="no-target-1" name="no-target" style="visibility:hidden;height:0;"></iframe> -->
+
+	<?php    return ob_get_clean();
+}
+add_shortcode( 'formfree', 'create_formdangky_shortcode' );
+
+
+
+
 // Create Shortcode formquatang
 // Use the shortcode: [formquatang]
 //
