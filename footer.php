@@ -29,7 +29,7 @@
 			// Code Countdown
 			//////////////////////////////////////////////////////////
 			$('#countdown').downCount({
-					date: '06/12/2018 23:00:59',
+					date: '06/25/2018 23:00:59',
 					offset: +7
 			}, function () {
 					console.log('done');
