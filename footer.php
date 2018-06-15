@@ -63,7 +63,6 @@
 		$('#formdangky').html('<div class="form-success">Gửi thông tin thành công !</div>');
 
 		setTimeout(function(){
-			// var url = "http://thieuniensieudang.com/thankyou";
 			$(location).attr('href',"http://thieuniensieudang.com/thankyou");
 		}, 500);
 });
@@ -86,8 +85,7 @@
 		$('.formfree').html('<div class="form-success">Gửi thông tin thành công !</div>');
 
 		setTimeout(function(){
-			// var url = "http://thieuniensieudang.com/thankyou";
-//			$(location).attr('href',"http://thieuniensieudang.com/thankyoufree");
+			$(location).attr('href',"http://thieuniensieudang.com/thankyoufree");
 		}, 500);
 });
 
