@@ -540,9 +540,8 @@ function create_formfree_shortcode($atts) {
 	);
 	// Attributes in var
 ob_start();?>
-	<form id="formdangky"  action="" method="POST" target="no-target">
+	<form id="formfree"  action="" method="POST" target="no-target">
     <input type="text" id="ften" name="" value="" placeholder="Họ tên">
-    <input type="text" id="femail" name="" value="" placeholder="Email">
     <input type="text" id="fdienthoai" name="" value="" placeholder="Số điện thoại">
     <!-- <input type="text" id="fkhuvuc" name="" value="" placeholder="Khu vực"> -->
     <select  id="fkhuvuc" name="" value="" placeholder="Khu vực">
