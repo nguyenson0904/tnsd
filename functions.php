@@ -472,7 +472,7 @@ function create_countdown_shortcode($atts) {
 	);
 	// Attributes in var
 ob_start();?>
-<ul id="countdown">
+<ul id="countdown" class="countdown">
 <li> <span class="number days">00</span>
 <p class="text days_ref">Ngày</p>
 </li>

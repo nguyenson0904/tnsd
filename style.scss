@@ -539,7 +539,9 @@ p {
         margin-top: 90px;
     }
 }
-
+#formfree input[type="text"], #formfree select, #formdangky input[type="text"], #formdangky select {
+    background: #e4e4e4;
+}
 #formquatang {
 
     #gemail {
